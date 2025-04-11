@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>F15 Esport Turnuva Takvimi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px 20px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    /* Sayfa Giriş Animasyonu */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffcc00;
+      margin-bottom: 25px;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+
+    table {
+      width: 100%;
+      margin: 20px 0;
+      border-collapse: collapse;
+      animation: fadeInTable 1s ease-in-out 0.5s forwards;
+    }
+
+    /* Tablo Animasyonu */
+    @keyframes fadeInTable {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    table, th, td {
+      border: 1px solid #00bfff;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      color: #00bfff;
+    }
+
+    th {
+      background-color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    .warning {
+      margin-top: 30px;
+      background-color: #ffcc00;
+      padding: 20px;
+      border-radius: 10px;
+      color: #111;
+      font-size: 16px;
+      opacity: 0;
+      animation: fadeInWarning 1s ease-in-out 1s forwards;
+    }
+
+    /* Uyarı Kutusu Animasyonu */
+    @keyframes fadeInWarning {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #00bfff;
+      text-decoration: none;
+      opacity: 0;
+      animation: fadeInLink 1s ease-in-out 1.5s forwards;
+    }
+
+    /* Geri Linki Animasyonu */
+    @keyframes fadeInLink {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎮 F15 Esport Turnuva Vaxtı</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Gün</th>
+          <th>Turnuva</th>
+          <th>Saat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Gün</td>
+          <td>F15 Esport Turnuvası</td>
+          <td>21:00</td>
+        </tr>
+        <tr>
+          <td>3. Gün</td>
+          <td>F15 Esport Turnuvası</td>
+          <td>21:00</td>
+        </tr>
+        <tr>
+          <td>6. Gün</td>
+          <td>F15 Esport Turnuvası</td>
+          <td>21:00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="warning">
+      <p><strong>Uyarı:</strong> Turnuvaya qatılmayanlar, <strong>yəni oy verməyənlər səbəbsiz qalanlarq</strong> qayib yazılacaq və 3 dən çox qayibi olanlarda klannan atılacaqdır!</p>
+    </div>
+
+    <a href="sayfa2.html" class="back-link">← Geri qayıt</a>
+  </div>
+
+</body>
+</html>
