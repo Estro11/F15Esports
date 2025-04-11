@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>F15 Esport - Klan Bilgisi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #00bfff;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    }
+
+    .info-box {
+      background-color: #2a2a2a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease;
+      opacity: 0;
+      animation: fadeInBox 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInBox {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .info-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00bfff80;
+      background-color: #333;
+    }
+
+    .info-box h2 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .info-box p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    /* Kaydırma stilini ekledik */
+    .scrollable {
+      height: 70vh;
+      overflow-y: auto;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>F15 Esport Klanı</h1>
+
+    <div class="scrollable">
+      <div class="info-box" onclick="location.href='sertler.html'">
+        <h2>🔥 Klan qanunları</h2>
+        <p>Klanımızın iç şərtləri və oyun içi disiplinləri haqqında bilgi almaq üçün tıklayın.</p>
+      </div>
+
+      <div class="info-box" onclick="location.href='turnuva.html'">
+        <h2>🏆 Klan içi turnuva</h2>
+        <p>Həftəlik turnuva programı və saatları burda.</p>
+      </div>
+
+      <div class="info-box" onclick="location.href='giris.html'">
+        <h2>✅ Klana Giriş Şərtləri</h2>
+        <p>F15 klanına qatılmaq üçün gərəkən şərtləri öyrənmək üçün tıklayın.</p>
+      </div>
+
+      <div class="info-box" onclick="location.href='liderler.html'">
+        <h2>🧑‍💼 Lider və Yönətçilər</h2>
+        <p>Klanımızın yönətim kadrosunu görmək üçün tıklayın.</p>
+      </div>
+
+      <div class="info-box" onclick="location.href='klanagir.html'">
+        <h2>🚪 Klana Gir</h2>
+        <p>F15'e qatılmaq üçün buradan başvuru elə!</p>
+      </div>
+    </div>
+
+    <a href="main.html" class="back-link">← Ana Sayfaya Dön</a>
+  </div>
+
+</body>
+</html>
